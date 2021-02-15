@@ -15,15 +15,79 @@
       <main class="row">
 
         <!-- ----------------SIDEBAR--------------- -->
-        <div id="sidebar" class="border col-xs-12 float-left">
+        <div id="sidebar" class="border col-xs-12 float-left flex">
+
+          <!-- LOGO -->
           <div id="logo_section" class="row">
-            <div class="col-xs-12">
-              <img src="img/logo.svg" alt="spotify logo">
+            <div class="col-xs-12 ms_sidebar_section_padding">
+              <div class="logo_container flex">
+                <img src="img/logo.svg" alt="spotify logo">
+              </div>
             </div>
           </div>
-          <div class="row"></div>
-          <div class="row"></div>
-          <div id="user_section" class="row"></div>
+
+          <!-- NAVIGATION -->
+          <div id="nav_section" class="row">
+            <div class="col-xs-12 ms_sidebar_section_padding">
+              <ul>
+                <li>
+                  <a href="">
+                    <img src="img/home.svg" alt="">
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="img/search.svg" alt="">
+                    <span>Cerca</span>
+                  </a>
+                </li><li>
+                  <a href="">
+                    <img src="img/libreria.svg" alt="">
+                    <span>La tua libreria</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- PLAYLIST -->
+          <div id="playlist_section" class="row">
+            <div class="col-xs-12 ms_sidebar_section_padding">
+              <h4>playlist</h4>
+              <div>
+                <span class="glyphicon glyphicon-plus"></span>
+                <span>
+                  crea playlist
+                </span>
+              </div>
+              <ul>
+                <li><a href="">nome playlist</a></li>
+                <li><a href="">nome playlist</a></li>
+                <li><a href="">nome playlist</a></li>
+                <li><a href="">nome playlist</a></li>
+                <li><a href="">nome playlist</a></li>
+                <li><a href="">nome playlist</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- USER -->
+          <div id="user_section" class="row">
+            <div class="col-xs-12 ms_sidebar_section_padding">
+              <div class="app_installer flex">
+                <span class="glyphicon glyphicon-arrow-down"></span>
+                <span>
+                  Installa app
+                </span>
+              </div>
+              <hr>
+              <div>
+                <img id="profile_picture" src="img/profile.svg" alt="immagine utente">
+                <span>John Doe</span>
+              </div>
+            </div>
+          </div>
         </div>
 
 
