@@ -19,6 +19,11 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+h2 {
+    font-size: 24px;
+    color:white;
+}
+
 /* ---RESET IMPO BOOSTRAP--- */
 ul {
     padding-inline-start: 0;
@@ -90,6 +95,21 @@ footer {
     background-color: #000;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 50px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
   
   
   /* ---------------------------------MAIN SECTION------------------------------ */
@@ -101,20 +121,20 @@ main {
 /* ----------------SIDEBAR------------------- */
 #sidebar {
     position: relative;
-    width: 50px;
+    width: 60px;
     height: 100%;
     flex-direction: column;
-    font-size:14px
+    font-size:14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 /* ---LOGO--- */
-#logo_section {
-    max-height: 80px;
-}
+/* #logo_section {
+    height: 80px;
+} */
 
 #logo_section img {
-    max-height: 70px;
-    padding: 5px 0;
     max-width: 100%;
 }
 
@@ -139,10 +159,13 @@ main {
     flex-grow: 1;
     min-height: 160px;
     overflow-y: scroll;
+    visibility: hidden;
 }
 
-#playlist_section h4 {
+#playlist_section h1 {
     text-transform: uppercase;
+    color: white;
+    font-size: 16px;
 }
 
 #playlist_section .glyphicon {
@@ -158,18 +181,14 @@ main {
 
 /* ---USER--- */
 
-.app_installer .glyphicon {
-    font-size: 0.6em;
-    border: 1px solid #b3b3b3;
-    border-radius: 50%;
-    padding:2px;
-    margin: 0 10px 2px 0;
+.app_installer img {
+    height: 1.5em;
+
 }
 
 #profile_picture {
     width: 1.6em;
     height: 1.6em;
-    margin-right: 10px;
     border: 1px solid white;
     border-radius: 50%;
 }
@@ -177,7 +196,7 @@ main {
 /* ----------------------------------LIBRARY--------------------------- */
 #library {
     position: relative;
-    width: calc(100% - 50px);
+    width: calc(100% - 60px);
     height: 100%;
     overflow-y: scroll;
     background-color: #1b1b1b;
@@ -187,7 +206,7 @@ main {
 #upgrade_bar {
     position: fixed;
     top:0;
-    width: calc(100% - 180px);
+    width: calc(100% - 60px);
     height: 60px;
     padding: 10px 0;
     z-index: 1;
@@ -211,6 +230,29 @@ main {
     padding:5px 10px;
     text-transform: uppercase;
     
+}
+
+
+.music_block_list li {
+    flex-basis: calc(100% / 2);
+    padding: 0 5px;
+}
+
+.music_block {
+    text-align: center;
+}
+.music_block .item_cover {
+    max-width: 100%;
+}
+#artisti_popolari .music_block .item_cover {
+    border-radius: 50%;
+    overflow:hidden;
+}
+.music_block .item_title {
+    font-size: 1.1em;
+}
+.music_block .item_caption {
+    font-size: 0.75em;
 }
 
 .item_cover {
@@ -241,28 +283,9 @@ main {
     color: white;
 }
 
-.music_block_list li {
-    flex-basis: calc(100% / 2);
-    padding: 0 5px;
+.item_title {
+    color: white;
 }
-
-.music_block {
-    text-align: center;
-}
-.music_block .item_cover {
-    max-width: 100%;
-}
-#artisti_popolari .music_block .item_cover {
-    border-radius: 50%;
-    overflow:hidden;
-}
-.music_block .item_title {
-    font-size: 1.1em;
-}
-.music_block .item_caption {
-    font-size: 0.75em;
-}
-
 
 
 /* -------------------------FOOTER--------------------------- */
@@ -285,7 +308,9 @@ footer {
 }
 
 /* --PLAYER LEFT-- */
-
+.player_left {
+    flex-shrink: 2;
+}
 .player_left .running_song_cover {
     width: 40px;
     height: 40px;
@@ -301,6 +326,9 @@ footer {
     color: white;
     font-weight: bold;
 }
+.player_left .running_song_author a:hover{
+    text-decoration: underline;
+}
 .player_left .running_song_title {
     font-size: 0.8em;
 }
@@ -312,7 +340,7 @@ footer {
     background: #b3b3b3;
 }
 .player_mid {
-    flex-grow: 1;
+    flex-grow: 3;
 }
 .player_mid .barra_avanzamento {
     width:50%;
@@ -338,6 +366,36 @@ footer {
 #sidebar {
     width: 180px;
 } 
+
+#logo_section {
+    height: 80px;
+}
+
+#logo_section img {
+    max-height: 70px;
+    padding: 5px 0;
+    max-width: 100%;
+}
+
+#playlist_section {
+    visibility: visible;
+}
+
+.app_installer img {
+    height: 1.2em;
+    margin-right: 10px;
+}
+
+#profile_picture {
+    width: 1.6em;
+    height: 1.6em;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
+
+
 #library {
     width: calc(100% - 180px)
 }
