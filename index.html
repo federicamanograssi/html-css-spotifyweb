@@ -4,10 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/master.css">
     <title></title>
   </head>
-  <body class="debug">
+  <body class="">
     
     <div class="wrapped container-fluid">
 
@@ -15,12 +18,12 @@
       <main class="row">
 
         <!-- ----------------SIDEBAR--------------- -->
-        <div id="sidebar" class="border col-xs-12 flex">
+        <div id="sidebar" class="border col-xs-12 flex flex_justify_spacebetween">
 
           <!-- LOGO -->
           <div id="logo_section" class="row">
             <div class="col-xs-12 ms_sidebar_section_padding">
-              <div class="logo_container flex">
+              <div class="logo_container flex flex_align_start">
                 <img src="img/logo.svg" alt="spotify logo">
               </div>
             </div>
@@ -75,7 +78,7 @@
           <!-- USER -->
           <div id="user_section" class="row">
             <div class="col-xs-12 ms_sidebar_section_padding">
-              <div class="app_installer flex">
+              <div class="app_installer flex flex_justify_start flex_align_center">
                 <span class="glyphicon glyphicon-arrow-down"></span>
                 <span>
                   Installa app
@@ -96,8 +99,10 @@
 
           <!-- UPGRADE_BAR -->
           <div id="upgrade_bar" class="row">
-            <div class="col-xs-12 ">
-              <button></button>
+            <div class="col-xs-12">
+              <div class="flex flex_justify_end">
+                <a href="" class="text-uppercase">effettua l'upgrade</a>
+              </div>
             </div>
           </div>
 
@@ -106,7 +111,7 @@
           <div id="content_library" class="row">
             <div class="col-xs-12">
               <div>
-                <ul class="library_category flex">
+                <ul class="library_category flex flex_justify_center flex_align_center">
                   <li><a href="">in evidenza</a></li>
                   <li><a href="">podcast</a></li>
                   <li><a href="">classifiche</a></li>
@@ -119,45 +124,75 @@
               <!-- ---RECENTLY PLAYED--- -->
               <div id="recently_played">
                 <h2>Recently Played</h2>
-                <ul class="music_block_list flex">
+                <ul class="music_block_list flex flex_wrap">
                   <li class="music_block">
                     <a href="">
-                      <img class="item_cover" src="img/metal_lifting.jpg" alt="Heavy Metal">
+                      <div class="item_cover">
+                        <div class="overlay">
+                          <i class="far fa-play-circle"></i>
+                        </div>
+                        <img src="img/metal_lifting.jpg" alt="Heavy Metal">
+                      </div>
                       <h3 class="item_title">Heavy Metal</h3>
                       <p class="item_caption">Subtitle</p>
                     </a>
                   </li>
                   <li class="music_block">
                     <a href="">
-                      <img class="item_cover" src="img/stranger.jpeg" alt="Stranger Things Soundtrack">
+                      <div class="item_cover">
+                        <div class="overlay">
+                          <i class="far fa-play-circle"></i>
+                        </div>
+                        <img src="img/stranger.jpeg" alt="Stranger Things Soundtrack">
+                      </div>
                       <h3 class="item_title">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
                       <p class="item_caption">kyle Dixon & Michael Stein</p>
                     </a>
                   </li>
                   <li class="music_block">
                     <a href="">
-                      <img class="item_cover" src="img/aquietplace.jpeg" alt="A quiet place">
+                      <div class="item_cover">
+                        <div class="overlay">
+                          <i class="far fa-play-circle"></i>
+                        </div>
+                        <img src="img/aquietplace.jpeg" alt="A quiet place">
+                      </div>
                       <h3 class="item_title">A quiet place</h3>
                       <p class="item_caption">Subtitle</p>
                     </a>
                   </li>
                   <li class="music_block">
                     <a href="">
-                      <img class="item_cover" src="img/split.jpeg" alt="Split Soundtrack">
+                      <div class="item_cover">
+                        <div class="overlay">
+                          <i class="far fa-play-circle"></i>
+                        </div>
+                        <img src="img/split.jpeg" alt="Split Soundtrack">
+                      </div>
                       <h3 class="item_title">Split</h3>
                       <p class="item_caption">Subtitle</p>
                     </a>
                   </li>
                   <li class="music_block">
                     <a href="">
-                      <img class="item_cover" src="img/cure.jpeg" alt="A cure for wellness">
+                      <div class="item_cover">
+                        <div class="overlay">
+                          <i class="far fa-play-circle"></i>
+                        </div>
+                        <img src="img/cure.jpeg" alt="A cure for wellness">
+                      </div>
                       <h3 class="item_title">A cure for wellness</h3>
                       <p class="item_caption">Subtitle</p>
                     </a>
                   </li>
                   <li class="music_block">
                     <a href="">
-                      <img class="item_cover" src="img/sinister.jpeg" alt="Sinister Soundtrack">
+                      <div class="item_cover">
+                        <div class="overlay">
+                          <i class="far fa-play-circle"></i>
+                        </div>
+                        <img src="img/sinister.jpeg" alt="Sinister Soundtrack">
+                      </div>
                       <h3 class="item_title">Sinister</h3>
                       <p class="item_caption">Subtitle</p>
                     </a>
@@ -172,13 +207,23 @@
                 <ul class="music_block_list flex">
                   <li class="music_block">
                     <a href="">
-                      <img class="item_cover" src="img/radar.jpeg" alt="Release Radar">
+                      <div class="item_cover">
+                        <div class="overlay">
+                          <i class="far fa-play-circle"></i>
+                        </div>
+                        <img src="img/radar.jpeg" alt="Release Radar">
+                      </div>
                       <h3 class="item_title">Release Radar</h3>
                     </a>
                   </li>
                   <li class="music_block">
                     <a href="">
-                      <img class="item_cover" src="img/mixdaily.jpeg" alt="Daily Mix 1">
+                      <div class="item_cover">
+                        <div class="overlay">
+                          <i class="far fa-play-circle"></i>
+                        </div>
+                        <img src="img/mixdaily.jpeg" alt="Daily Mix 1">
+                      </div>
                       <h3 class="item_title">Daily Mix 1</h3>
                     </a>
                   </li>
@@ -186,19 +231,29 @@
               </div>
 
               <!-- --ARTISTI PIù POPOLARI-- -->
-              <div>
+              <div id="artisti_popolari">
                 <h2>Artisti più popolari</h2>
                 <p>Più ascolti, più accurati saranno i suggerimenti</p>
                 <ul class="music_block_list flex">
                   <li class="music_block">
                     <a href="">
-                      <img class="item_cover" src="img/youg.jpeg" alt="Release Radar">
+                      <div class="item_cover">
+                        <div class="overlay">
+                          <i class="far fa-play-circle"></i>
+                        </div>
+                        <img src="img/youg.jpeg" alt="Release Radar">
+                      </div>
                       <h3 class="item_title">Lana del Rey</h3>
                     </a>
                   </li>
                   <li class="music_block">
                     <a href="">
-                      <img class="item_cover" src="img/einaudi.jpeg" alt="Daily Mix 1">
+                      <div class="item_cover">
+                        <div class="overlay">
+                          <i class="far fa-play-circle"></i>
+                        </div>
+                        <img src="img/einaudi.jpeg" alt="Daily Mix 1">
+                      </div>
                       <h3 class="item_title">Ludovico Einaudi</h3>
                     </a>
                   </li>
@@ -212,10 +267,46 @@
 
       <!-- -------------------------FOOTER----------------------------- -->
       <footer class="row">
-        <div class="col-xs-12">
-          <div></div>
-          <div></div>
-          <div></div>
+        <div class="col-xs-12 player_section flex flex_justify_spacebetween flex_align_center">
+
+          <!-- --PLAYER-LEFT-- -->
+          <div class="player_left flex flex_align_center">
+            <div class="running_song flex flex_align_center">
+              <img class="running_song_cover" src="img/sinister.jpeg" alt="">
+              <div class="running_song_info">
+                <p class="running_song_author">Sinister</p>
+                <p class="running_song_title">Brano Nome</p>
+              </div>
+            </div>
+            <div class="running_song_icon">
+              <i class="far fa-heart"></i>
+              <i class="far fa-folder"></i>
+            </div>
+          </div>
+
+          <!-- --PLAYER MID-- -->
+          <div class="player_mid text-center">
+            <div>
+              <i class="fas fa-random"></i>
+              <i class="fas fa-step-backward"></i>
+              <i class="far fa-play-circle"></i>
+              <i class="fas fa-step-forward"></i>
+              <i class="fas fa-redo-alt"></i>
+            </div>
+            <div class="flex flex_justify_center flex_align_center">
+              <span>0:25</span>
+              <div class="barra_avanzamento"></div>
+              <span>4:35</span>
+            </div>
+          </div>
+
+          <!-- --PLAYER-RIGHT-- -->
+          <div class="player_right flex flex_align_center">
+            <i class="fas fa-list"></i>
+            <i class="fas fa-desktop"></i>
+            <i class="fas fa-volume-up"></i>
+            <div class="barra_avanzamento"></div>
+          </div>
         </div>
       </footer>
     </div>
